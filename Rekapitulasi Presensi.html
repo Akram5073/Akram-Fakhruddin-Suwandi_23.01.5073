@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMIKOM Dashboard</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body style="background-color: #BBDED6;">
+    <div class="container-fluid" style="background-color: #BBDED6;">
+        <div class="">
+            <nav class="navbar navbar-light ">
+            <h1 class="navbar-brand fs-1 cf text-a">AMIKOM</h1>
+              <div class="">
+                  <button onclick="location.href='Login.html'" class="btn btn-outline-lo mr-2" type="button">Log Out</button>
+                  <img src=".png">
+                  <span class="text-secondary">USERNAME</span>
+              </div>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-md-12 bg-dsb py-1 text-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <a href="Dashboard.html" class="text-light nav-link px-3 fs-lg">Dashboard</a>
+                <a href="" class="text-light nav-link px-3 fs-lg">Presensi</a>
+                <a href="Tambah Data.html" class="text-light nav-link px-3 fs-lg">Tambah Data</a>
+                <a href="Rekapitulasi Presensi.html" class="text-light nav-link px-3 fs-lg">Rekapitulasi Nilai</a>
+                <a href="#" class="text-light nav-link px-3 fs-lg">Panduan</a>
+              </div>
+            </div>
+        </div>
+        <h1 class="ms-4 mt-2 fw-bold">REKAPITULASI</h1>
+        <div class="row">
+            <div id="" class="container rounded mt-3 w-75 h-100 bg-light">
+                <form id="Form">
+                    <div class="row mt-1">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="class">Class</label>
+                                <select class="form-control" id="Kelas">
+                                    <option value="">Kelas</option>
+                                    <option value="1">Kelas 1</option>
+                                    <option value="2">Kelas 2</option>
+                                    <option value="3">Kelas 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="class">Pertemuan</label>
+                                <select class="form-control" id="Pertemuan">
+                                    <option value="">Pertemuan</option>
+                                    <option value="1">Pertemuan 1</option>
+                                    <option value="2">Pertemuan 2</option>
+                                    <option value="3">Pertemuan 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 py-4 ms-10 ">
+                            <button type="submit" class="btn bg-lightgrey">Aplly</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table id="tabel" class="table table-bordered">
+                                <thead>
+                                    <tr> 
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        <th>NIM</th>
+                                        <th>Lokasi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="body">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Student</td>
+                                        <td>23.01.0101</td>
+                                        <td>Unknown</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Student</td>
+                                        <td>23.01.0101</td>
+                                        <td>Unknown</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Student</td>
+                                        <td>23.01.0101</td>
+                                        <td>Unknown</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 mt-3 w-25 text-center">
+                <div class="card">
+                    <div class="card-header fw-bold bg-lightgrey">
+                        MENU
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-lightergrey">
+                            <a href="Rekapitulasi Presensi.html" class="nav-link text-dark fw-bold">Presensi</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Rekapitulasi Tugas.html" class="nav-link text-dark">Tugas</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Rekapitulasi Responsi.html" class="nav-link text-dark">Responsi</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Rekapitulasi UTS.html" class="nav-link text-dark">UTS</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="Rekapitulasi UAS.html" class="nav-link text-dark">UAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>    
+    </div>
+</body>
+</html>

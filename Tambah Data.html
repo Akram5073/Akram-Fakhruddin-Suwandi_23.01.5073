@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMIKOM Dashboard</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body style="background-color: #BBDED6;">
+    <div class="container-fluid" style="background-color: #BBDED6;">
+        <div class="">
+            <nav class="navbar navbar-light ">
+            <h1 class="navbar-brand fs-1 cf text-a">AMIKOM</h1>
+              <div class="">
+                  <button onclick="location.href='Login.html'" class="btn btn-outline-lo mr-2" type="button">Log Out</button>
+                  <img src=".png">
+                  <span class="text-secondary">USERNAME</span>
+              </div>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-md-12 bg-dsb py-1 text-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <a href="Dashboard.html" class="text-light nav-link px-3 fs-lg">Dashboard</a>
+                <a href="" class="text-light nav-link px-3 fs-lg">Presensi</a>
+                <a href="Tambah Data.html" class="text-light nav-link px-3 fs-lg">Tambah Data</a>
+                <a href="Rekapitulasi Presensi.html" class="text-light nav-link px-3 fs-lg">Rekapitulasi Nilai</a>
+                <a href="#" class="text-light nav-link px-3 fs-lg">Panduan</a>
+              </div>
+            </div>
+        </div>
+        <div id="" class="container rounded mt-5 w50 h50 bg-light">
+            <form id="Form">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <select class="form-control" id="class">
+                                <option value="">Select Class</option>
+                                <option value="1">Class 1</option>
+                                <option value="2">Class 2</option>
+                                <option value="3">Class 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan Nama">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" name="nim" class="form-control" placeholder="Masukkan NIM">
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-4">
+                        <button type="submit" class="btn bg-secondary">Tambah</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="tabel" class="table table-bordered">
+                            <thead>
+                                <tr> 
+                                    <th>Name</th>
+                                    <th>NIM</th>
+                                </tr>
+                            </thead>
+                            <tbody id="body">
+                                <tr>
+                                    <td>Student</td>
+                                    <td>23.01.0101</td>
+                                </tr>
+                                <tr>
+                                    <td>Student</td>
+                                    <td>23.01.0101</td>
+                                </tr>
+                                <tr>
+                                    <td>Student</td>
+                                    <td>23.01.0101</td>
+                                </tr>
+                                <tr>
+                                    <td>Student</td>
+                                    <td>23.01.0101</td>
+                                </tr>
+                                <tr>
+                                    <td>Student</td>
+                                    <td>23.01.0101</td>
+                                </tr>
+                                <tr>
+                                    <td>Student</td>
+                                    <td>23.01.0101</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
